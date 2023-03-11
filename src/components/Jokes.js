@@ -23,7 +23,7 @@ const Jokes = () => {
           {isLoading ? (
             <h3>Loading... To J😄ke</h3>
           ) : (
-            <p className="myjoke">{joke.value}</p>
+            <p className="myjoke">{joke.value.substring(0, 70)}</p>
           )}
         </div>
         <button onClick={getJoke} class="button" role="button">
